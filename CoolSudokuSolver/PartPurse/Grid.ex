@@ -1,5 +1,4 @@
-defmodule Sudoku.Grid do
-  # wat simpele gets, plus een put.
+defmodule PartPurse.Grid do
   def get(board, row, column) do
     board
     |> Enum.at(row)
@@ -15,6 +14,7 @@ defmodule Sudoku.Grid do
     end
   end
 
+#zet een getal op een gegeven plek
   def put(board, row, column, value) do
     row_list = Enum.at(board, row)
 

@@ -1,4 +1,4 @@
-defmodule Sudoku.Box do
+defmodule PartPurse.Box do
   #dit is om de verschillende boxen binnen het board te vinden.
   def get_box_start(row, column) do
     box_row = div(row, 3) * 3
