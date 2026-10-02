@@ -2,7 +2,7 @@ defmodule PartPurse.Solver do
   #bevat recursie en logica van de sudoku oplossen.
   #het gaat als volgt: kijk naar candidates en als er dan geen lege cellen meer zijn, en kijkt dan naar de cel met de minste opties, en vult die in een voor een.
   alias PartPurse.Candidates
-  alias partPurse.Grid
+  alias PartPurse.Grid
   def solve(board) do
     candidates = Candidates.build(board)
 

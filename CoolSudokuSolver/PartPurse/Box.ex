@@ -12,7 +12,6 @@ defmodule PartPurse.Box do
 
     for r <- start_row..(start_row + 2),
         c <- start_column..(start_column + 2) do
-      Sudoku.Grid.get(board, r, c)
-    end
+      PartPurse.Grid.get(board, r, c)    end
   end
 end

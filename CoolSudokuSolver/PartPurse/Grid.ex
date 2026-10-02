@@ -27,7 +27,7 @@ defmodule PartPurse.Grid do
     Enum.at(board, row)
   end
 
-  def get_colum(board, column) do
+  def get_column(board, column) do
     Enum.map(board, fn row ->
       Enum.at(row, column)
     end)

@@ -1,8 +1,16 @@
+#Laad alle modules in de juiste volgorde in
+Code.require_file("../PartPurse/Grid.ex")
+Code.require_file("../PartPurse/Box.ex")
+Code.require_file("../PartPurse/Candidate.ex")
+Code.require_file("../PartPurse/Solver.ex")
+
+ExUnit.start()
+
 defmodule SudokuSolverTest do
   use ExUnit.Case
-#arrange
-  Code.require_file("../PartPurse/Solver.ex")
-  ExUnit.start()
+
+  alias PartPurse.Solver, as: SudokuSolver
+
   test "solves a sudoku" do
     board = [
       [5, 3, 0, 0, 7, 0, 0, 0, 0],
@@ -16,9 +24,7 @@ defmodule SudokuSolverTest do
       [0, 0, 0, 0, 8, 0, 0, 7, 9]
     ]
 
-    #act
-    solution = PartPurse.Solver.solve(board)
-    #assert
+    solution = SudokuSolver.solve(board)
     assert solution == [
              [5, 3, 4, 6, 7, 8, 9, 1, 2],
              [6, 7, 2, 1, 9, 5, 3, 4, 8],
@@ -30,7 +36,6 @@ defmodule SudokuSolverTest do
              [2, 8, 7, 4, 1, 9, 6, 3, 5],
              [3, 4, 5, 2, 8, 6, 1, 7, 9]
            ]
-
 
   end
 end
