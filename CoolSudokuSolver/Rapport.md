@@ -14,7 +14,9 @@ In deze opdracht wordt onderzocht welke functionele concepten en kenmerken centr
 
 ## AI
 Er is weinig gebruik gemaakt van AI,
-Met name is AI gebruikt voor spelling controle, en kijken of d
+Met name is AI gebruikt voor spelling controle, en apa bronvermelding, twee onderdelen die ik eerder niet goed heb ingeleverd.
+
+Ik heb de bronvermelding direct overgenomen, en de verbetering deels overgenomen, met name omdat ik zag dat de ai (chatgpt) best wat te streng was volgens mij.
 
 ---
 
@@ -561,3 +563,10 @@ Voor het oplossen van de Sudoku is recursion meer dan goed geschikt, omdat het b
 Ook functies zoals `Enum.map`, `Enum.filter` en `Enum.reduce`, samen met de pipe operator en comprehensions, maken het mogelijk om de code op een declaratieve manier te schrijven.
 
 Hierdoor kan de Sudoku Solver volledig worden opgebouwd rond functionele programmeerconcepten, zonder gebruik te maken van klassieke objectgeoriënteerde concepten zoals classes, objects, inheritance en mutable object state.
+
+## 6. Bronvermelding
+
+Elixir. (2026). Introduction. Elixir Documentation. https://elixir.hexdocs.pm/introduction.html
+Elixir School. (z.d.). Elixir School. https://elixirschool.com/en
+HAN University of Applied Sciences. (2026). Opdracht Functioneel Paradigma. https://aim-cni.github.io/app/docs/Paradigma%20challenge/opdracht_functioneel_programmeren
+OpenAI. (2026). ChatGPT [Generatieve AI].https://chatgpt.com/share/6abff3eb-9280-83ed-bce0-155727ec5bf2
