@@ -19,4 +19,22 @@ defmodule PartPurse.Candidates do
       number not in used
     end)
   end
+
+  #gaat door de enum empty_cells en probeert de zet candidates op die plek
+  def build(board) do
+    empty_cells = Grid.empty_cells(board)
+
+    Enum.reduce(empty_cells, %{}, fn {row, column}, candidates ->
+      values = get_for_cell(board, row, column)
+
+      Map.put(candidates, {row, column}, values)
+    end)
+  end
+
+  #hier zoek ik de cel met de minste mogelijkheden
+  def find_most_constrained(candidates) do
+    Enum.min_by(candidates, fn {_position, values} ->
+      length(values)
+    end)
+  end
 end

@@ -1,5 +1,5 @@
 defmodule PartPurse.Box do
-  #dit is om de verschillende boxen binnen het board te vinden.
+  #dit is om de verschillende boxen binnen het board te vinden. dus in een 9x9 tile sudoku, zijn er 9 boxen.
   def get_box_start(row, column) do
     box_row = div(row, 3) * 3
     box_column = div(column, 3) * 3

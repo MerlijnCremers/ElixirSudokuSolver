@@ -1,5 +1,5 @@
 defmodule SudokuSolver do
   def solve(board) do
-    Sudoku.Solver.solve(board)
+    PartPurse.Solver.solve(board)
   end
 end
